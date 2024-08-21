@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="Fractions.js" type="module"></script>
+		<script src="MathFunctions.js" type="module"></script>
+		
+	</head>
+	
+	<body>
+		<div is="fraction-standard" numerator="5 + 5" denominator="7"></div>
+		<to-jest-moj-element></to-jest-moj-element>
+		<div is="number-decimal" value="5"></div>
+		<input type="text" id="rr">
+	</body>
+	
+	<script type="module">
+		import {Function} from "./MathFunctions.js";
+		document.getElementById("rr").onkeydown = (event) => {
+			if(event.keyCode == 13) {
+				let eq = event.srcElement.value;
+				console.log(Function.parse(eq));
+			}
+		};
+	</script>
+
+</html>

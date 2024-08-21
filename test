@@ -1,0 +1,36 @@
+{
+	columns => {
+		id {
+			unsigned,
+			int,
+			primary,
+		},
+		kolumna2 {
+			text,
+			utf8
+		},
+		kolumna3 {
+			text,
+			utf9
+		}
+	},
+	name => "tabela1"
+},
+{
+	columns => {
+		id {
+			unsigned,
+			int,
+			primary,
+		},
+		kolumna2 {
+			text,
+			utf8
+		},
+		kolumna3 {
+			text,
+			utf9
+		}
+	},
+	name => "tabela2"
+}
